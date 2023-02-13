@@ -16,7 +16,9 @@ class DatabaseSeeder extends Seeder
     {
         $this -> call([
 
-            PersonSeeder :: class
+            PersonSeeder :: class,
+            PersonDetailSeeder :: class, 
+            PostSeeder :: class,
         ]);
     }
 }

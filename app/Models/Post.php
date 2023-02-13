@@ -9,12 +9,14 @@ class Post extends Model
 {
     use HasFactory;
 
-        protected $fillable = [
+    protected $fillable = [
+
         'title',
         'body',
     ];
 
-    public function person(){
+    public function person() {
+
         return $this -> belongsTo(Person :: class);
     }
 }

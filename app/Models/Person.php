@@ -10,15 +10,17 @@ class Person extends Model
     use HasFactory;
 
     protected $fillable = [
+        
         'name',
         'mail',
     ];
 
-    public function personDetail(){
+    public function personDetail() {
+
         return $this -> hasOne(PersonDetail :: class);
     }
+    public function posts() {
 
-        public function posts(){
-        return $this -> hasMany(Posts :: class);
+        return $this -> hasMany(Post :: class);
     }
 }

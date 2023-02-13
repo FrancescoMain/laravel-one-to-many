@@ -10,12 +10,14 @@ class PersonDetail extends Model
     use HasFactory;
 
     protected $fillable = [
+        
         'phone',
         'address',
         'avatar',
     ];
 
     public function person() {
+
         return $this -> belongsTo(Person :: class);
     }
 }
