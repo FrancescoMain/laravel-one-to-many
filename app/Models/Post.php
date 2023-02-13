@@ -13,4 +13,8 @@ class Post extends Model
         'title',
         'body',
     ];
+
+    public function person(){
+        return $this -> belongsTo(Person :: class);
+    }
 }
