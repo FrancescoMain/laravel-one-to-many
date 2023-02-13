@@ -1,4 +1,4 @@
-@extends('lauouts.main-layout')
+@extends('layouts.main-layout')
 
 @section('content')
     <h1>hello</h1>    
